@@ -96,7 +96,7 @@ const Hero = () => {
 
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-warm-charcoal font-serif leading-tight relative">
               Hi, I'm <span className="relative inline-block text-warm-charcoal">
-                Rajnish
+                Rajnish Kumar
                 {/* SVG Underline Highlight */}
                 <svg viewBox="0 0 200 20" fill="none" className="absolute left-0 -bottom-2 w-full h-3">
                   <motion.path
