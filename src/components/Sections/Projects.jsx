@@ -234,7 +234,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex flex-wrap gap-1.5 mt-2">
-                  {["React.js", "Tailwind CSS", "Firebase", "Maps API"].map(
+                  {["React.js",'Next.js', "Tailwind CSS", "Firebase", "Maps API"].map(
                     (tag, tIdx) => (
                       <Badge
                         key={tIdx}
@@ -259,7 +259,7 @@ const Projects = () => {
                   </Button>
                   <Button
                     variant="secondary"
-                    href="https://github.com/Rajnish12-git/Bharat-Darshan"
+                    href="https://web-bharat-darshan.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 gap-1.5 py-2 px-3 text-xs rounded-xl"
