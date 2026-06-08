@@ -7,7 +7,7 @@ const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Resume', href: '/public/RajnishKumar_resume.pdf' },
+  { name: 'Resume', href: '/public/RajnishKumar_resume.pdf'},
   { name: 'GitHub', href: 'https://github.com/rajnish12-git', isExternal: true },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/rajnish-kumar-100558249', isExternal: true },
   { name: 'Contact', href: '#contact' }
