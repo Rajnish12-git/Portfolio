@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-cream: #FAF6F0;
+  --color-warm-beige: #F4EFE6;
+  --color-warm-charcoal: #2C2520;
+  --color-warm-taupe: #8C7A6B;
+  --color-warm-light: #FDFBF7;
+
+  --color-accent-blue: #E8F1F5;
+  --color-accent-blueDark: #A8C9D8;
+  --color-accent-gold: #d4ac74;
+  --color-accent-goldDark: #bf9862;
+  --color-accent-goldLight: #f2e3cb;
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: Lora, serif;
+  --font-handwritten: "Caveat", cursive;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-warm-cream text-warm-charcoal font-sans selection:bg-accent-gold/20 selection:text-warm-charcoal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-semibold tracking-tight text-warm-charcoal;
+}
+
+@utility glass-card {
+  background: rgba(244, 239, 230, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(253, 251, 247, 0.4);
+}
+
+@utility glass-nav {
+  background: rgba(250, 246, 240, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(212, 172, 116, 0.15);
+}
+
+@utility warm-shadow {
+  box-shadow: 0 4px 20px -2px rgba(140, 122, 107, 0.12), 0 2px 8px -1px rgba(140, 122, 107, 0.08);
+}
+
+@utility warm-shadow-lg {
+  box-shadow: 0 10px 30px -4px rgba(140, 122, 107, 0.18), 0 4px 12px -2px rgba(140, 122, 107, 0.12);
+}
+
+/* Custom scrollbar matching warm theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8E2D5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4ac74;
+}
+
+/* Custom styles for organic shapes */
+.organic-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
