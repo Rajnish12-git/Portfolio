@@ -47,7 +47,7 @@ const ResumeLinks = () => {
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button 
                   variant="secondary" 
-                  href="/public/RajnishKumar_resume.pdf" 
+                  href="/RajnishKumar_resume.pdf" 
                   className="gap-2.5 px-8 py-4 shadow-md hover:shadow-lg transition-all text-sm font-semibold rounded-2xl"
                 >
                   <Download size={18} /> Download PDF Resume

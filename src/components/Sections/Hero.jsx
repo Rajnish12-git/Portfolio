@@ -121,7 +121,7 @@ const Hero = () => {
             <Button variant="secondary" href="#projects" className="gap-2 px-7 py-3.5 shadow-md hover:shadow-lg rounded-2xl border border-accent-goldDark/20 font-semibold">
               Explore Projects <Play size={16} />
             </Button>
-            <Button variant="outline" href="/public/RajnishKumar_resume.pdf" className="gap-2 px-7 py-3.5 hover:bg-warm-beige/35 border-warm-taupe/20 font-semibold rounded-2xl">
+            <Button variant="outline" href="/RajnishKumar_resume.pdf" className="gap-2 px-7 py-3.5 hover:bg-warm-beige/35 border-warm-taupe/20 font-semibold rounded-2xl">
               Get Resume
             </Button>
           </div>
